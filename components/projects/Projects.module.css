@@ -1,0 +1,97 @@
+.row {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.portfoliomodal,
+.modal-content {
+  border-radius: 0px;
+  background-color: #f6f5f5;
+}
+.section3 {
+  padding-left: 100px;
+}
+
+.section3 .section__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: Roboto Mono, monospace;
+  width: 09ch;
+  animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+      transition: delay(200);
+
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.projectcard {
+  margin-left: 0;
+  margin-bottom: 40px;
+  transition: box-shadow 9px;
+  margin-right: 0;
+  width: 1230px;
+  display: flex;
+}
+
+.projectcard__img {
+  padding-right: 20px;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projectcard__info {
+  border: 1px solid #f1f1f1;
+  padding: 50px 50px 40px 30px;
+  display: flex;
+}
+
+.projectcard__i {
+  display: inline-block;
+}
+.projectcard__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Roboto Mono, monospace;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 700;
+  margin-top: 50px;
+  color: #171920;
+}
+
+.projectcard__description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 45px;
+}
+.projectcard__link {
+  margin-top: 55px;
+  font-family: Roboto Mono, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  float: right;
+}
+
+.projectcard:hover {
+  box-shadow: 0 1px 31px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+}

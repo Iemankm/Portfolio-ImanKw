@@ -1,0 +1,136 @@
+.menu {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 70px;
+  margin-right: 0;
+  transition: all 0.5s;
+  background-color: #909168;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.heeader {
+  width: 100%;
+}
+.ul {
+  display: flex;
+}
+
+.Link {
+  display: inline-block;
+  padding-left: 30px;
+}
+.menu__wrapper {
+  z-index: 1;
+  margin-top: 12px;
+  transition: all 0.3s;
+  margin-left: 55px;
+}
+.menu__wrapper .nav {
+  font-size: 17px;
+  line-height: 20px;
+  font-family: Roboto Mono, monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.menu__wrapper .nav a {
+  color: #171920;
+  padding-left: 20px;
+}
+.menu__wrapper .nav a:hover {
+  opacity: 1;
+}
+
+.menu__wrapper .nav a:after {
+  background: #909168;
+}
+
+.menu__wrapper a {
+  color: white !important;
+  opacity: 1;
+}
+.menu__wrapper a:hover {
+  color: #171920 !important;
+}
+
+.container2 {
+  margin-bottom: 135px;
+  height: 500px;
+  width: 100%;
+  background-color: #909168;
+}
+
+.about {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.lii {
+  display: flex;
+}
+.left {
+  display: inline-block;
+}
+
+.right {
+  display: inline-block;
+  margin-right: 400px;
+  height: 400px;
+  display: grid;
+  place-items: center;
+}
+
+.profilepic {
+  height: 450px;
+  width: 400px;
+  margin-top: 90px;
+  object-fit: cover;
+}
+
+.name {
+  color: white;
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-top: 160px;
+  margin-left: 1px;
+  margin-bottom: 50px;
+  font-family: Roboto Mono, monospace;
+  width: 16ch;
+  animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.aboutdes {
+  color: #242331;
+  margin-left: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+/* .icon {
+  color: white;
+  font-size: 30px;
+  margin-left: 30px;
+  padding-left: 10px;
+  font-family: Roboto Mono, monospace;
+} */

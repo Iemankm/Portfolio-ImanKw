@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+.resumebtn{
+    align-items: center;
+    padding: 10px 25px;
+    border: 2px solid #D6D6B1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.69vw;
+    width: 8.8vw;
+    height: 3.5vw;
+    font-family: Raleway;
+    font-size: calc(20 / var(--base-font-size) * 1rem);
+    font-size: clamp(1.25rem, 0.095vw, 2.5rem);
+    line-height: 1.15;
+    color: #D6D6B1;
+    background-color: transparent;
+}
+
+.sendbtn{
+    align-items: center;
+    border: 2px solid #55B234;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.69vw;
+    width: 8.8vw;
+    height: 3.5vw;
+    font-family: Raleway;
+    font-size: calc(23 / var(--base-font-size) * 1rem);
+    font-size: clamp(1.4rem, 0.11vw, 2.8rem);
+    line-height: 1.17;
+    color: #55B234;
+    background-color: transparent;
+}
