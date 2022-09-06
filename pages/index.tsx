@@ -5,7 +5,7 @@ import { Header } from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 // import Projects from "../components/About/About";
 // import Projects from "../components/Projects/Projects"
-// import About from "../components/About/About";
+import About from "../components/About/About";
 
 export default function Home({ aboutMes, achievements, projects }) {
   console.log(projects);
@@ -14,8 +14,8 @@ export default function Home({ aboutMes, achievements, projects }) {
       <title>Iman Al Wahaibi</title>
       <Header aboutMes={aboutMes} />
 
-      {/* <Projects projects={projects} />
-     <About aboutMes={aboutMes} /> */}
+      {/* <Projects projects={projects} />*/}
+     <About aboutMes={aboutMes} /> 
       
       <Footer />
     </div>
