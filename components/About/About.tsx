@@ -22,7 +22,7 @@ export default function About({ aboutMes }) {
             <div className={styles.right}>
               {""}
               <Heading2 className={styles.section__title}>About Me</Heading2>
-              <Heading4 as="p" className={styles.aboutdes}>{aboutMes.about}</Heading4>
+              <Heading4 as="p" className={styles.aboutdes}>{aboutMes.about}</Heading4> 
             </div>
           </div>
           ))}

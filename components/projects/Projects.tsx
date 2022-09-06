@@ -4,7 +4,7 @@ import client from "../../apolloClient";
 import styles from "./Projects.module.css";
 import { motion } from "framer-motion";
 import { Heading2, Heading3, Heading4 } from "../styleGuid/components/text";
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Projects({ projects }) {
   console.log("aaa", projects);
@@ -27,7 +27,7 @@ export default function Projects({ projects }) {
         } else {
           projectClasses.push(styles.rightCard)
         }
-        console.log('project', project);
+
 
         projectClasses.join(' ');
         
