@@ -2,24 +2,33 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { Heading1,Heading3,Heading2 } from "../styleGuid/components/text";
+import Image from 'next/image'
+
+
 
 const navItems = [
+
   {
-    href: "#pojects",
+    href: "#proj",
     title: "Pojects",
   },
   {
-    href: "#achi",
-    title: "Achievements",
+    href: "#about",
+    title: "About Me",
   },
   {
     href:"#contact",
-    title:"Contact",
+    title:"Contact Me",
   }
 ];
 
 export const Header = ({ aboutMes }) => (
   <div className={styles.heeader}>
+    <div className={styles.menu__logo}>
+      <Image src="/iman.svg" alt="logo" className={styles.logo} width={70}
+        height={70} />
+        </div>
     <div className={styles.menu}>
       <div className={styles.container}>
         <div className={styles.row}>
@@ -27,14 +36,14 @@ export const Header = ({ aboutMes }) => (
             <nav className={styles.nav}>
               <ul className={styles.ul}>
                 {" "}
-                <Link className={styles.li} href="#achi">
-                  <a>Achievements</a>
-                </Link>
                 <Link className={styles.li} href="#proj">
                   <a>Projects</a>
                 </Link>
+                <Link className={styles.li} href="#about">
+                  <a>About me</a>
+                </Link>
                 <Link className={styles.li} href="#contact">
-                  <a>Contact</a>
+                  <a>Contact me</a>
                 </Link>
               </ul>
             </nav>
@@ -46,17 +55,18 @@ export const Header = ({ aboutMes }) => (
       <div className={styles.about}>
         {aboutMes.map((aboutMes, i) => (
           <div className={styles.lii} key={i}>
-            <div className={styles.left}>
-              <img
+            {/* <div className={styles.left}> */}
+              {/* <img
                 src={aboutMes.profilepic.url}
                 className={styles.profilepic}
-              />
-            </div>
+              /> */}
+            {/* </div> */}
             <div className={styles.right}>
               {" "}
-              <h2 className={styles.name}>Iman Al Wahaibi_</h2>
-              <h3 className={styles.aboutdes}>{aboutMes.about}</h3>
-            
+             <div className={styles.info}> <Heading3 as="h3" >Hi, I Am </Heading3>
+              <Heading1 as="h1">Iman Al Wahaibi</Heading1></div>
+              {/* <h2 className={styles.name}>Iman Al Wahaibi_</h2> */}              
+              <Heading2>Front-End Developer</Heading2>
             </div>
           </div>
         ))}

@@ -1,8 +1,10 @@
 import React from "react";
 import { gql } from "@apollo/client";
 import client from "../../apolloClient";
-import styles from "../achievements/Achievements.module.css";
+import styles from "../Projects/Achievements.module.css";
 import { motion } from "framer-motion";
+import { Heading2 } from "../styleGuid/components/text";
+
 const spring = {
   type: "spring",
   damping: 20,
@@ -13,17 +15,16 @@ const spring = {
 export default function Achievements({ achievements }) {
   console.log(achievements);
   return (
-    <section className={styles.section2} id="achi">
-      <div className={styles.row}>
+    <section className={styles.section2} id="proj">
+       <div className={styles.row}>
         <div>
-          <motion.h2
-            className={styles.section__title}
-            transition={{ delay: 3050 }}
-          >
-            Achievements_
-          </motion.h2>
+          <Heading2>
+            Projects
+          </Heading2>
         </div>
       </div>
+
+
       <div className={styles.aw}>
         <div className={styles.row}>
           <div className={styles.awardlist}>
@@ -69,7 +70,7 @@ export default function Achievements({ achievements }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </section>
   );
 }

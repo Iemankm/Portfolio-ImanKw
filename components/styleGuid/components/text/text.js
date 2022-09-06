@@ -13,11 +13,15 @@ const Base = ({
   children,
   className,
   ...props
-}) => (
-  <Component {...props} className={s[SCALE_TO_CLASS[`${scale}`]]}>
+}) =>{
+  const classNames = [[s[scale]], className].filter(Boolean).join(" ");
+ return (
+  <Component {...props} className={classNames}>
     {children}
   </Component>
-);
+  );
+};
+
 
 export const Heading1 = (props) => <Base as="h1" scale="heading1" {...props} />;
 

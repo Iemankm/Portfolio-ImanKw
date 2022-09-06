@@ -1,97 +1,156 @@
+.section2 {
+  margin-top: 10vh;
+}
+
+
+.title {
+  margin-left: 58vh;
+  color:var(--clr-Dell);
+  margin-bottom: 20vw;
+}
+
+.projectcard__title{
+  margin-top: 20vw;
+  margin-left: 20vw;
+  color: var(--clr-Mine-Shaft);
+}
+
+.projectcard__description{
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.projectcard__link{
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+.leftCard {
+  margin-left: -1vw;
+  margin-top: 12vw;
+  background-color: var(--clr-Green-Mist);
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid var(--clr-Green-Mist);
+  width: 294vw;
+  height: 137vw;
+  display: flex;
+  
+}
+.leftCard:hover {
+  border: 4px solid var(--clr-Dell);
+}
+
+.pic{
+  width: 600vw;
+  height: 20vw;
+}
+
+.rightCard {
+  margin-left: -1vw;
+  margin-top: 12vw;
+  background-color: var(--clr-Green-Mist);
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid var(--clr-Green-Mist);
+  width: 294vw;
+  height: 137vw;
+}
+.rightCard:hover {
+  border: 4px solid var(--clr-Dell);
+}
+
+
+.card3 {
+  margin-left: -1vw;
+  margin-top: 12vw;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid var(--clr-Green-Mist);
+  width: 294vw;
+  height: 137vw;
+}
+.card3:hover {
+  border: 4px solid var(--clr-Dell);
+} 
+
+
 .row {
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.portfoliomodal,
-.modal-content {
-  border-radius: 0px;
-  background-color: #f6f5f5;
-}
-.section3 {
-  padding-left: 100px;
-}
-
-.section3 .section__title {
-  margin-bottom: 40px;
-  font-size: 36px;
-  line-height: 42px;
-  font-family: Roboto Mono, monospace;
-  width: 09ch;
-  animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-      transition: delay(200);
-
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-.projectcard {
-  margin-left: 0;
-  margin-bottom: 40px;
-  transition: box-shadow 9px;
-  margin-right: 0;
-  width: 1230px;
-  display: flex;
-}
-
-.projectcard__img {
-  padding-right: 20px;
-  padding-left: 20px;
   display: inline-block;
 }
 
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.projectcard__info {
-  border: 1px solid #f1f1f1;
-  padding: 50px 50px 40px 30px;
-  display: flex;
+.section2 {
+  padding-left: 88px;
+  padding-top: 10px;
+  padding-bottom: 0px !important;
+  margin-bottom: 20vh;
 }
 
-.projectcard__i {
-  display: inline-block;
-}
-.projectcard__title {
-  font-size: 18px;
-  line-height: 30px;
-  font-family: Roboto Mono, monospace;
-  text-transform: uppercase;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  font-weight: 700;
-  margin-top: 50px;
-  color: #171920;
-}
+@media (min-width: 768px) {
+ 
+  .card1 {
+    margin-left: -1vw;
+    margin-top: 4vw;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid var(--clr-Green-Mist);
+    width: 36.9vw;
+    height: 38vw;
+  }
+  .card1:hover {
+    border: 4px solid var(--clr-Dell);
+  }
 
-.projectcard__description {
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 45px;
-}
-.projectcard__link {
-  margin-top: 55px;
-  font-family: Roboto Mono, monospace;
-  font-size: 14px;
-  line-height: 20px;
-  float: right;
-}
+  .card2 {
+    margin-left: 50vw;
+    margin-top: -10vw;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid var(--clr-Green-Mist);
+    width: 36.9vw;
+    height: 38vw;
+  }
+  .card2:hover {
+    border: 4px solid var(--clr-Dell);
+  }
 
-.projectcard:hover {
-  box-shadow: 0 1px 31px rgba(0, 0, 0, 0.09);
-  cursor: pointer;
+
+  .card3 {
+    margin-left: -1vw;
+    margin-top: -6vw;
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid var(--clr-Green-Mist);
+    width: 36.9vw;
+    height: 38vw;
+  }
+  .card3:hover {
+    border: 4px solid var(--clr-Dell);
+  } 
+  .aw {
+    display: flex;
+  }
+  
+  .row {
+    display: inline-block;
+  }
+  
+  .section2 {
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 0px !important;
+    margin-bottom: 20vh;
+  }
+  
+  /* .section__title {
+    margin-bottom: 40px;
+        white-space: nowrap;
+    overflow: hidden;    
+  }
+   */
+
 }
