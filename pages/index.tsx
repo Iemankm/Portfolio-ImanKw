@@ -7,7 +7,7 @@ import Footer from "../components/footer/Footer";
 import Projects from "../components/Projects/Projects";
 import About from "../components/About/About";
 
-export default function Home({ aboutMes, achievements, projects }) {
+export default function Home({ aboutMes, projects }) {
   console.log(projects);
   return (
     <div>
