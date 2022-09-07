@@ -1,118 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Lora|Montserrat|Nunito');
 
-/* .menu {
-  position: fixed;
-  padding: 0;
-  top: 0;
-  left: 30%;
-  z-index: 100;
-  width: 100%;
-  height: 70px;
-  margin-right: 0;
-  transition: all 0.5s;
-} */
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-} */
-/* 
-.heeader {
-  width: 100%;
-  position: sticky;
-  top: 0;
-}
-
-.logo{
-  display: inline-block;
-  color: white;
-  font-size: 60px;
-  margin-left: 10px;
-}
-
-.nav{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: black;
-  overflow: hidden;
-}
-
-.menu a{
-  display: block;
-  padding: 30px;
-  color: white;
-}
-.menu a:hover{
-  background-color: gray;
-}
-.nav{
-  max-height: 0;
-  transition: max-height .5s ease-out;
-}
-
-.hamb{
-  cursor: pointer;
-  float: right;
-  padding: 40px 20px;
-}
-
-.hambline {
-  background: white;
-  display: block;
-  height: 2px;
-  position: relative;
-  width: 24px;
-
-}
-
-.hambline::before,
-.hambline::after{
-    background: var(--white);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-.hambline::before{
-    top: 5px;
-}
-.hambline::after{
-    top: -5px;
-}
-
-.sidemenu {
-    display: none;
-}
+/* Menu CSS */
 
 
-.sidemenu:checked ~ nav{
-  max-height: 100%;
-}
-.sidemenu:checked ~ .hamb .hambline {
-  background: transparent;
-}
-.sidemenu:checked ~ .hamb .hambline::before {
-  transform: rotate(-45deg);
-  top:0;
-}
-.sidemenu:checked ~ .hamb .hambline::after {
-  transform: rotate(45deg);
-  top:0;
-}
 
 
-.ul {
-  display: flex;
-}
-
-.Link {
-  display: inline-block;
-  padding-left: 30px;
-} */
+/*-----------------------------------------------*/
 
 .menu a{
   color: var(--clr-Green-Mist);
@@ -126,21 +19,53 @@
     color:var(--clr-Dell) !important;
   }
 
+  
+.info{
+  display: grid;
+}
+
+.iam{
+  padding-left: 130vw;
+  font-size: 4rem;
+  padding-bottom: -2vw;
+}
+
+.frontend{
+  font-size: 5rem;
+  padding-left: 68vw;
+  padding-top: 5vw;
+}
+.name{
+  font-size: 8rem;
+  padding-left: 45vw;
+}
+
 
   .container2 {
     height: 500px;
-   
+    margin-left: 15vh;
   }
 
-
   .right {
-    margin-top: 18%;
+    margin-top: 87vw;
     display: inline-block;
     width: 338vw;
     display: grid;
-    place-items: center;
-    
   }
+
+  .menu__logo{
+    position: fixed;
+    /* left: 2vh; */
+    width: 60vw;
+    height: 90px;
+    margin-right: 0;
+    z-index: 1;
+    margin-top: 62px;
+    /* transition: all 0.3s; */
+    /* margin-left: 63px;*/
+  }
+
+
 
   /* .info{
     margin-right: 16%;
@@ -152,177 +77,57 @@
   }
 @media (min-width: 768px) {
 
-   .menu {
-  position: fixed;
-  padding: 0;
-  top: 0;
-  left: 70%;
-  width: 100%;
-  height: 70px;
-  margin-right: 0;
-  z-index: 1;
-  margin-top: 28px;
-  transition: all 0.3s;
-  margin-left: 55px;
-}
+  /* .menu a{
+    color: var(--clr-Green-Mist);
+     padding-left: 1em;
+  }
+  .menu li{
+      float: left;
+  }
+  .menu a:hover{
+      opacity: 1;
+      color:var(--clr-Dell) !important;
+    } */
 
-.menu__logo{
-  position: fixed;
-  padding: 0;
-  top: 0;
-  left: -2vh;
-  width: 100%;
-  height: 70px;
-  margin-right: 0;
-  z-index: 1;
-  margin-top: 12px;
-  transition: all 0.3s;
-  margin-left: 63px;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-  .nav{
-    font-size: calc(18 / var(--base-font-size) * 1rem);
-    font-size: clamp(1.125rem, 1vw, 2.25rem);
-    font-family: Nunito;
-    font-style: normal;
-    line-height: 1.4;
-    text-transform: capitalize;
-    flex-grow: 0;
-    
+    .menu__logo{
+      position: fixed;
+      /* left: 2vh; */
+      width: 14vw;
+      height: 70px;
+      margin-right: 0;
+      /* z-index: 1; */
+      margin-top: 45px;
+      /* transition: all 0.3s; */
+      /* margin-left: 63px;*/
+    }
+
+    .right {
+      margin-top: 20vw;
+      display: inline-block;
+      width: 92vw;
+     
+    }
+
+    .info{
+      display: flex;
+    }
+
+  .iam{
+    padding-left: 18.5vw;
+    font-size: 2rem;
+    padding-top: 2.1vw;
   }
 
-  .container2 {
-    height: 700px;
-    width: 100vw;
-    height:77vh;
+  .name{
+    font-size: clamp(4rem,  5vw, 8rem);
+    padding-left: 1vw;
   }
 
-  .right {
-    margin-top: 6%;
-    display: inline-block;
-    width:96vw;
-    display: grid;
-    place-items: center;
-    
-  }
-
-  .info{
-    margin-right: 1%;
-  }
-
-  .about {
-    margin-left: 2%;
-    margin-top: 16%;
+  .frontend{
+    padding-left: 22.5vw;
+    font-size: clamp(3rem, 4vw, 4.5rem);
+    padding-top: 0;
   }
 
 
-
-  
-
-  .hamb{
-      display: none;
-  }
-
-  
 }
-/* .menu__wrapper {
-  z-index: 1;
-  margin-top: 12px;
-  transition: all 0.3s;
-  margin-left: 55px;
-}
-.menu__wrapper .nav {
-  font-size: calc(18 / var(--base-font-size) * 1rem);
-  font-size: clamp(1.125rem, 1vw, 2.25rem);
-  font-family: Nunito;
-  font-style: normal;
-  line-height: 1.4;
-  text-transform: capitalize;
-  flex-grow: 0;
-}
-.menu__wrapper .nav a {
-  color: var(--clr-Green-Mist);
-  padding-left: 1em;
-}
-.menu__wrapper .nav a:hover {
-  opacity: 1;
-}
-
-.menu__wrapper a {
-  opacity: 1;
-}
-.menu__wrapper a:hover {
-  color:var(--clr-Dell) !important;
-} */
-
-
-
-
-/* .lii {
-  display: flex;
-}
-.left {
-  display: inline-block;
-}
-
-.right {
-  display: inline-block;
-  margin-right: 400px;
-  height: 400px;
-  display: grid;
-  place-items: center;
-} */
-/* 
-.profilepic {
-  height: 450px;
-  width: 400px;
-  margin-top: 90px;
-  object-fit: cover;
-} */
-/* 
-.name {
-  color: white;
-  font-size: 44px;
-  line-height: 50px;
-  font-weight: 700;
-  margin-top: 160px;
-  margin-left: 1px;
-  margin-bottom: 50px;
-  font-family: Roboto Mono, monospace;
-  width: 16ch;
-  animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-.aboutdes {
-  color: #242331;
-  margin-left: 30px;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 50px;
-} */
-/* .icon {
-  color: white;
-  font-size: 30px;
-  margin-left: 30px;
-  padding-left: 10px;
-  font-family: Roboto Mono, monospace;
-} */

@@ -1,90 +1,126 @@
+
 .section2 {
-  margin-top: 10vh;
+  padding-left: 19vw;
+  padding-top: 22vw;
+  padding-bottom: 0 !important;
+  margin-bottom: 20vh;
 }
+
+
 
 
 .title {
-  margin-left: 58vh;
+  margin-left: 134vw;
   color:var(--clr-Dell);
   margin-bottom: 20vw;
+  font-size: 5rem;
+  margin-bottom: 20vh;
+
+
+}
+.row{
+  width: 292vw;
 }
 
-.projectcard__title{
-  margin-top: 20vw;
-  margin-left: 20vw;
-  color: var(--clr-Mine-Shaft);
+
+
+.carditem:nth-child(1){
+  margin-left: 26vw;
+  margin-top: 12vw;
+  background-color: var(--clr-dell);
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid var(--clr-Green-Mist);
+  width: 300vw;
+  height: 300vw;
 }
 
-.projectcard__description{
-  margin-left: 20vw;
-  margin-right: 20vw;
+.carditem:nth-child(1):hover{
+  border: 4px solid var(--clr-Dell);
+
 }
 
-.projectcard__link{
-  margin-left: 20vw;
-  margin-right: 20vw;
+.carditem:nth-child(2){
+  margin-left: 26vw;
+  margin-top: 12vw;
+  background-color: var(--clr-dell);
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid var(--clr-Green-Mist);
+  width: 300vw;
+  height: 300vw;
 }
-.leftCard {
-  margin-left: -1vw;
+.carditem:nth-child(2):hover{
+  border: 4px solid var(--clr-Dell);
+
+}
+.carditem:nth-child(3){
+  margin-left: 26vw;
+  margin-top: 12vw;
+  background-color: var(--clr-dell);
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid var(--clr-Green-Mist);
+  width: 300vw;
+  height: 300vw;
+}
+
+
+.carditem:nth-child(3):hover{
+  border: 4px solid var(--clr-Dell);
+
+}
+
+
+
+/* .card1 {
+  margin-left: 26vw;
   margin-top: 12vw;
   background-color: var(--clr-Green-Mist);
   padding: 10px;
   border-radius: 10px;
   border: 4px solid var(--clr-Green-Mist);
-  width: 294vw;
-  height: 137vw;
-  display: flex;
-  
-}
-.leftCard:hover {
-  border: 4px solid var(--clr-Dell);
-}
-
-.pic{
-  width: 600vw;
-  height: 20vw;
-}
-
-.rightCard {
-  margin-left: -1vw;
-  margin-top: 12vw;
-  background-color: var(--clr-Green-Mist);
-  padding: 10px;
-  border-radius: 10px;
-  border: 4px solid var(--clr-Green-Mist);
-  width: 294vw;
-  height: 137vw;
-}
-.rightCard:hover {
-  border: 4px solid var(--clr-Dell);
-}
-
-
-.card1 {
-  margin-left: -1vw;
-  margin-top: 12vw;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  border: 4px solid var(--clr-Green-Mist);
-  width: 294vw;
-  height: 137vw;
+  width: 300vw;
+  height: 300vw;
 }
 .card1:hover {
   border: 4px solid var(--clr-Dell);
-} 
+} */
 
+.infos{
+ 
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
 
-.row {
+.projectcard__title{
+  font-size: 4rem;
+  margin-top: 25vw;
+  margin-left: 20vw;
+  color: var(--clr-Green-Mist);
+
+}
+
+.projectcard__description{
+  font-size: 2.2rem;
+  margin-left: 20vw;
+  margin-right: 19vw;
+  margin-top: 0vw;
+  color: var(--clr-Green-Mist);
+}
+
+/* .projectcard__link{
+  margin-left: 30vw;
+  margin-right: 20vw;
+  color: var(--clr-Green-Mist);
+} */
+.pic{
+  /* height: 130vw; */
+  width: 168.8vh;
   display: inline-block;
 }
 
-.section2 {
-  padding-left: 88px;
-  padding-top: 10px;
-  padding-bottom: 0px !important;
-  margin-bottom: 20vh;
-}
+
 
 @media (min-width: 768px) {
  

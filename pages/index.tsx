@@ -11,13 +11,14 @@ export default function Home({ aboutMes, achievements, projects }) {
   console.log(projects);
   return (
     <div>
-      <title>Iman Al Wahaibi</title>
+      {/* <title>Iman Al Wahaibi</title> */}
       <Header aboutMes={aboutMes} />
-
+      <About aboutMes={aboutMes} />
+      {/* 
       <Projects projects={projects} />
-     <About aboutMes={aboutMes} /> 
       
-      <Footer />
+      
+      <Footer /> */}
     </div>
   );
 }

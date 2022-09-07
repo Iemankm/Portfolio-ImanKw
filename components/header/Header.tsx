@@ -1,8 +1,9 @@
 import Link from "next/link";
-import styles from "./Header.module.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { Heading1,Heading3,Heading2 } from "../styleGuid/components/text";
+import styles from "./Header.module.css";
 import Image from 'next/image'
 
 
@@ -26,10 +27,9 @@ const navItems = [
 export const Header = ({ aboutMes }) => (
   <div className={styles.heeader}>
     <div className={styles.menu__logo}>
-      <Image src="/iman.svg" alt="logo" className={styles.logo} width={70}
-        height={70} />
+      <Image src="/iman.svg" alt="logo" className={styles.logo} layout='fill' />
         </div>
-    <div className={styles.menu}>
+    {/* <div className={styles.menu}>
       <div className={styles.container}>
         <div className={styles.row}>
           <div className={styles.menu__wrapper}>
@@ -50,7 +50,7 @@ export const Header = ({ aboutMes }) => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     <div className={styles.container2}>
       <div className={styles.about}>
         {aboutMes.map((aboutMes, i) => (
@@ -63,10 +63,10 @@ export const Header = ({ aboutMes }) => (
             {/* </div> */}
             <div className={styles.right}>
               {" "}
-             <div className={styles.info}> <Heading3 as="h3" >Hi, I Am </Heading3>
-              <Heading1 as="h1">Iman Al Wahaibi</Heading1></div>
+             <div className={styles.info}> <Heading3 className={styles.iam} >Hi, I Am </Heading3>
+              <Heading1 as="h1" className={styles.name}>Iman Al Wahaibi</Heading1></div>
               {/* <h2 className={styles.name}>Iman Al Wahaibi_</h2> */}              
-              <Heading2>Front-End Developer</Heading2>
+              <Heading2 className={styles.frontend}>Front-End Developer</Heading2>
             </div>
           </div>
         ))}

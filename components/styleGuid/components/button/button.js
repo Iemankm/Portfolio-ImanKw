@@ -10,12 +10,15 @@ const Base = ({
   className,
   variant,
   ...props
-}) => (
-  <Component {...props} className={s[VARIANT[`${variant}`]]}>
+}) =>{
+  const classNames = [[s[variant]], className].filter(Boolean).join(" ");
+ return (
+  <Component {...props} className={classNames}>
     {children}
   </Component>
+  );
+ };
 
-);
 
 export const Resumebtn = (props) => (
   <Base as="button" variant="resumebtn" {...props} />
