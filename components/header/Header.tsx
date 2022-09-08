@@ -29,7 +29,6 @@ const navItems = [
 export const Header = ({ aboutMes }) => (
   
   <div className={styles.heeader}>
-    
     <div className={styles.menu__logo}>
       <Image src="/iman.svg" alt="logo" className={styles.logo} layout='fill' />
         </div>
