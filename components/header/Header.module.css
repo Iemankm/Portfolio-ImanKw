@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Lora|Montserrat|Nunito');
 
-/* Menu CSS */
-
-
-
-
-/*-----------------------------------------------*/
 
 .menu a{
   color: var(--clr-Green-Mist);
@@ -55,50 +49,27 @@
 
   .menu__logo{
     position: fixed;
-    /* left: 2vh; */
     width: 60vw;
     height: 90px;
     margin-right: 0;
     z-index: 1;
     margin-top: 62px;
-    /* transition: all 0.3s; */
-    /* margin-left: 63px;*/
+ 
   }
 
-
-
-  /* .info{
-    margin-right: 16%;
-    margin-left: 15%;
-  } */
 
   .about {
     display: flex;
   }
 @media (min-width: 768px) {
 
-  /* .menu a{
-    color: var(--clr-Green-Mist);
-     padding-left: 1em;
-  }
-  .menu li{
-      float: left;
-  }
-  .menu a:hover{
-      opacity: 1;
-      color:var(--clr-Dell) !important;
-    } */
 
     .menu__logo{
       position: fixed;
-      /* left: 2vh; */
       width: 14vw;
       height: 70px;
       margin-right: 0;
-      /* z-index: 1; */
       margin-top: 45px;
-      /* transition: all 0.3s; */
-      /* margin-left: 63px;*/
     }
 
     .right {

@@ -15,24 +15,11 @@ export default function styleGuide() {
     </div>
 
     <div style={{display:'flex',padding:"20px"}}>
-    {/* <div
-          style={{ padding: "50px",margin:'8px',height:'20px',width:'20px', backgroundColor: `var(--clr-Dell)` }}
-        ></div>        <Spacer size={16} />
-    <div 
-          style={{ padding: "50px",margin:'8px',height:'20px',width:'20px', backgroundColor: `var(--clr-Green-Mist)` }}
-        ></div>        <Spacer size={16} />
-       
-<div
-          style={{ padding: "50px",margin:'8px',height:'20px',width:'20px', backgroundColor: `var(--clr-Alto)` }}
-        ></div>        <Spacer size={16} />
-<div
-          style={{ padding: "50px", margin:'8px',height:'20px',width:'20px',backgroundColor: `var(--clr-Mine-Shaft)` }}
-        ></div>        <Spacer size={16} /> */}
-
+   
     </div>
    <div style={{display:'flex',padding:"20px"}}>
    <Resumebtn style={{margin:"10px"}}>Resume</Resumebtn>
-    {/* <Spacer size={16} /> */}
+ 
     <Sendbtn style={{margin:"10px"}}>Send</Sendbtn>
     </div>
      </Container>

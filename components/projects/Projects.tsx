@@ -43,10 +43,6 @@ export default function Projects({ projects }) {
                       <Heading4 className={styles.projectcard__description}>
                         {project.description}
                       </Heading4>
-
-                      {/* <a href="" className={styles.projectcard__link}>
-                        {project.date}
-                      </a> */}
           </div>
           </div>
           </div>

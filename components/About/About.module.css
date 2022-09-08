@@ -67,10 +67,10 @@
 @media (min-width : 768px){
   
 .left{
-  padding-left: 0vw;
+  padding-left: 7vw;
   margin-bottom: 30vh;
   margin-top: 30vh;
-  width: 378vw;
+  width: 100vw;
 }
 
 .section__title {
@@ -84,24 +84,22 @@
 
 .about {
   padding-top: 3vw;
-  max-width: 100vw;
-  height: 300vh;
+  max-width: 120vw;
+  height: 117vh;
 }
 
 .lii{
   display: flex;
-    margin-top: 30vh;
+  margin-top: 10vw;
     margin-left:5vw;
-    margin-right: 5vw;
+   margin-right: 34.5vw;
 }
 
 .right {
   display: inline-block;
-  /* margin-right: 161px;
-  margin-left: 86px; */
   height: 400px;
   display: grid;
-  padding-top: 2vw;
+  padding-top: 0vw;
 
 }
 
@@ -114,19 +112,21 @@
 }
 .aboutdes {
   line-height: 2vw;
-  margin-top: 25vw;
-  margin-left: -15vw;
-  font-size: clamp(1.438rem, 2vw, 3.6rem);
+  margin-top: 19vw;
+  margin-left: 3vw;
+  font-size: clamp(0.438rem, 1.5vw, 2rem);
   color: var(--clr-Green-Mist);
   text-align: left;
 }
 
 .resumebtn{
-  margin-left: 42vw !important;
+  margin-left: 37vw !important;
   margin-top: -23vw !important;
-  width: 17vw !important;
-  height: 3.5vw !important;
-  font-size: clamp(1.25rem, 0.095vw, 2.5rem) !important;
+  width: 12vw !important;
+  height: 3vw !important;
+  font-size: clamp(0.95rem, 1vw, 1.5rem) !important;
+  padding: 2px 1px !important;
+
   
 }
 
