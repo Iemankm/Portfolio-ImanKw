@@ -26,8 +26,8 @@ const navItems = [
 
 
 
-export default function Header ({ aboutMes }) => (
-  
+export default function Header ({ aboutMes }) { 
+  return(
   <div className={styles.heeader}>
     <div className={styles.menu__logo}>
       <Image src="/iman.svg" alt="logo" className={styles.logo} layout='fill' />
@@ -49,4 +49,6 @@ export default function Header ({ aboutMes }) => (
       </div>
     </div>
   </div>
-);
+  );
+        };
+        
