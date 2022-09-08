@@ -23,9 +23,12 @@
 }
 
 
+.carditems{
+  padding-left:13vw;
 
+}
 .carditem:nth-child(1){
-  margin-left: 26vw;
+  
   margin-top: 12vw;
   background-color: var(--clr-dell);
   padding: 10px;
@@ -41,7 +44,6 @@
 }
 
 .carditem:nth-child(2){
-  margin-left: 26vw;
   margin-top: 12vw;
   background-color: var(--clr-dell);
   padding: 10px;
@@ -55,7 +57,7 @@
 
 }
 .carditem:nth-child(3){
-  margin-left: 26vw;
+
   margin-top: 12vw;
   background-color: var(--clr-dell);
   padding: 10px;
@@ -97,9 +99,10 @@
 }
 
 
-.pic{
-  width: 168.8vh;
-  display: inline-block;
+.pic {
+  width: 293vw;
+  height: 150vw;
+  position: relative;
 }
 
 

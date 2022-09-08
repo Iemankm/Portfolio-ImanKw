@@ -31,8 +31,7 @@ export default function Projects({ projects }) {
           <div className={styles.pic}> 
            <Image
             src={project.projpic.url}
-            width={1180}
-            height={600}
+            layout="fill"
             alt="project Picture"
           /></div>  
 

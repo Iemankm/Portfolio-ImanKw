@@ -13,64 +13,60 @@
     color:var(--clr-Dell) !important;
   }
 
-  
-.info{
-  display: grid;
-}
+
 
 .iam{
-  padding-left: 130vw;
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: -2vw;
 }
 
 .frontend{
-  font-size: 5rem;
-  padding-left: 68vw;
-  padding-top: 5vw;
+  font-size: 2rem;
+  margin: 0;
 }
 .name{
-  font-size: 8rem;
-  padding-left: 45vw;
+  font-size: 3rem;
+  margin:0;
 }
 
-
-  .container2 {
-    height: 500px;
-    margin-left: 15vh;
+@media (min-width: 768px) {
+  .name{
+    font-size: clamp(4rem,  5vw, 8rem);
   }
+}
 
-  .right {
-    margin-top: 87vw;
-    display: inline-block;
-    width: 338vw;
-    display: grid;
-  }
-
-  .menu__logo{
-    position: fixed;
-    width: 60vw;
-    height: 90px;
-    margin-right: 0;
-    z-index: 1;
-    margin-top: 62px;
  
-  }
+.container2{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+@media (min-width: 768px) {
+  .container2{
+    min-height: 100vh;
+  }
+}
+
+ 
+.menu__logo{
+    position: fixed;
+    width: 15vw;
+    height: 90px;
+    z-index: 1;
+    margin-left: 2vh;
+    margin-top: 10px;
+  }
 
   .about {
     display: flex;
   }
 @media (min-width: 768px) {
-
-
-    .menu__logo{
-      position: fixed;
-      width: 14vw;
-      height: 70px;
-      margin-right: 0;
-      margin-top: 45px;
-    }
+   
 
     .right {
       margin-top: 20vw;
@@ -84,18 +80,11 @@
     }
 
   .iam{
-    padding-left: 18.5vw;
     font-size: 2rem;
     padding-top: 2.1vw;
   }
 
-  .name{
-    font-size: clamp(4rem,  5vw, 8rem);
-    padding-left: 1vw;
-  }
-
   .frontend{
-    padding-left: 22.5vw;
     font-size: clamp(3rem, 4vw, 4.5rem);
     padding-top: 0;
   }

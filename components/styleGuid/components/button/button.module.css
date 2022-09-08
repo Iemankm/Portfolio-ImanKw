@@ -12,11 +12,11 @@
     flex-direction: row;
     justify-content: center;
     gap: 0.69vw;
-    width: 8.8vw;
-    height: 3.5vw;
+    width: 25vh;
+    height:6vh;
     font-family: Raleway;
     font-size: calc(20 / var(--base-font-size) * 1rem);
-    font-size: clamp(1.25rem, 0.095vw, 2.5rem);
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
     line-height: 1.15;
     color: #D6D6B1;
     background-color: transparent;
