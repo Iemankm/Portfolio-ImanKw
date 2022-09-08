@@ -26,7 +26,7 @@ const navItems = [
 
 
 
-export const Header = ({ aboutMes }) => (
+export default function Header ({ aboutMes }) => (
   
   <div className={styles.heeader}>
     <div className={styles.menu__logo}>

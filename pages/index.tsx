@@ -2,7 +2,7 @@ import React from "react";
 import { gql } from "@apollo/client";
 import client from "../apolloClient";
 import About from "../components/About/About";
-import { Header } from "../components/Header/Header";
+import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Projects from "../components/Projects/Projects"
 import Head from 'next/head'
