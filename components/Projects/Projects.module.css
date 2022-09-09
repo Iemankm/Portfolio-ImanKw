@@ -30,10 +30,28 @@
 @media (min-width: 768px) {
   .carditems{
     grid-template-columns: repeat(2, 4fr);
+    column-gap: 20vh;
+    grid-template-columns: repeat(2, 4fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "card1 . "
+      ". card2"
+      "card3 . ";
+  }
+
+  .carditem:nth-child(1){
+    grid-area: card1;
+  }
+  .carditem:nth-child(2){
+    grid-area: card2;
+    margin-top: -30vh;
+  }
+  .carditem:nth-child(3){
+    grid-area: card3;
+    margin-top: -30vh;
   }
 }
 .carditem:nth-child(1){
-  
   background-color: var(--clr-dell);
   padding: 10px;
   border-radius: 10px;
@@ -57,7 +75,6 @@
 
 }
 .carditem:nth-child(3){
-
   background-color: var(--clr-dell);
   padding: 10px;
   border-radius: 10px;

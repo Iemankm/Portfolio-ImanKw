@@ -6,7 +6,8 @@ import { Heading1,Heading3,Heading2 } from "../styleGuid/components/text";
 import styles from "./Hero.module.css";
 import Image from 'next/image'
 
-
+// assets
+import ImanK from '../../images/imank.svg';
 
 const navItems = [
 
@@ -32,7 +33,7 @@ export default function Hero ({ hero }) {
   return(
   <div className={styles.heeader}>
     <div className={styles.menu__logo}>
-      <Image src="/iman.svg" alt="logo" className={styles.logo} layout='fill' />
+      <Image src={ImanK} alt="logo" className={styles.logo} layout='responsive' width={114} height={68.12}/>
         </div>
   
           <div className={styles.container2}>

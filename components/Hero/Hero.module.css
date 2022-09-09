@@ -57,7 +57,7 @@
 .menu__logo{
     position: fixed;
     width: 15vw;
-    height: 90px;
+    height: 90vw;
     z-index: 1;
     margin-left: 2vh;
     margin-top: 10px;
@@ -67,7 +67,11 @@
     display: flex;
   }
 @media (min-width: 768px) {
-   
+    .menu__logo{
+      width: 9vw;
+      height: 55vw;
+      
+    }
 
     .right {
       margin-top: 20vw;
