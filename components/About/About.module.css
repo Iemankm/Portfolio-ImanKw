@@ -1,5 +1,5 @@
 
-.section3{
+.section2{
   padding-left: 10vw;
   padding-right: 10vw;
   min-height: 50vh;
@@ -11,7 +11,7 @@
 }
 
 @media (min-width: 768px) {
-  .section3{
+  .section2{
     min-height: 100vh;
   }
 }

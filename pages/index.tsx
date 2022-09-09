@@ -19,7 +19,7 @@ export default function Home({ aboutMes, hero, projects }) {
       </Head>
       <Hero hero={hero} />
       <About aboutMes={aboutMes} />
-      {/* <Projects projects={projects} /> */}
+      <Projects projects={projects} />
 
       {/* 
       

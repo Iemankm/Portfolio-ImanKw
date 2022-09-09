@@ -16,13 +16,14 @@
 
 
 .iam{
-  font-size: 3rem;
+  font-size: 1.5rem;
   padding-bottom: -2vw;
 }
 
 .frontend{
   font-size: 2rem;
   margin: 0;
+  padding-top: 1vh;
 }
 .name{
   font-size: 3rem;
@@ -86,7 +87,7 @@
 
   .frontend{
     font-size: clamp(3rem, 4vw, 4.5rem);
-    padding-top: 0;
+    padding-top: 1vh;
   }
 
 

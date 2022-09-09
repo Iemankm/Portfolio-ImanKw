@@ -10,7 +10,7 @@ import { iterateObserversSafely } from "@apollo/client/utilities";
 export default function Projects({ projects }) {
 
   return (
-    <section className={styles.section2} id="proj">
+    <section className={styles.section3} id="proj">
        <div className={styles.row}>
         <div>
           <Heading2 className={styles.title}>
@@ -24,34 +24,25 @@ export default function Projects({ projects }) {
         return(
           
         <div key={i} className={styles.carditem}>
-          <div className={styles.row}>
-          <div className={styles.card1}>
-            
-      
+         
           <div className={styles.pic}> 
            <Image
             src={project.projpic.url}
-            layout="fill"
+            layout="responsive"
+            width={725}
+            height={425}
             alt="project Picture"
           /></div>  
 
           <div className={styles.infos}>
-                      <Heading3 className={styles.projectcard__title}>
-                        {project.title}
-                      </Heading3>
-                      <Heading4 className={styles.projectcard__description}>
-                        {project.description}
-                      </Heading4>
+              <Heading3 className={styles.projectcard__title}>
+                {project.title}
+              </Heading3>
+              <Heading4 as="p" className={styles.projectcard__description}>
+                {project.description}
+              </Heading4>
           </div>
           </div>
-          </div>
-        
-        </div> 
-
-        
-
-      
-      
         )}
     )}
     </div>

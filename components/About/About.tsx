@@ -11,7 +11,7 @@ import { Container, Row, Col } from "react-grid-system";
 export default function About({ aboutMes }) {
   console.log(aboutMes);
   return (
-    <section className={styles.section3} id="about">
+    <section className={styles.section2} id="about">
         {aboutMes?.map((aboutMes, i) => (
           <div className={styles.lii} key={i}>
             <div className={styles.left} >
