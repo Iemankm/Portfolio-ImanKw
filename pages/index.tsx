@@ -6,10 +6,11 @@ import Footer from "../components/Footer/Footer";
 import Projects from "../components/Projects/Projects"
 import Head from 'next/head'
 import Hero from "../components/Hero/Hero";
+import Contact from "../components/Contact/Contact";
 
 
        
-export default function Home({ aboutMes, hero, projects }) {
+export default function Home({ aboutMes, hero, projects, contact }) {
   console.log(projects);
   return (
     <div>
@@ -20,10 +21,8 @@ export default function Home({ aboutMes, hero, projects }) {
       <Hero hero={hero} />
       <About aboutMes={aboutMes} />
       <Projects projects={projects} />
-
+      <Contact contact={contact} />
       {/* 
-      
-      
       <Footer /> */}
     </div>
   );

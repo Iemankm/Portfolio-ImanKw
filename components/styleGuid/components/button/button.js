@@ -1,7 +1,6 @@
 import s from './button.module.css';
 const VARIANT = {
-  resumebtn: 'resumebtn',
-  sendbtn: 'sendbtn'
+  resumebtn: 'resumebtn'
 };
 
 const Base = ({
@@ -26,6 +25,3 @@ export const Resumebtn = (props) => (
 
 
 
-export const Sendbtn = (props) => (
-  <Base as="button" variant="sendbtn" {...props} />
-);

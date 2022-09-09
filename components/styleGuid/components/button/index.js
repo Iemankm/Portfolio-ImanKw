@@ -1,1 +1,1 @@
-export { Resumebtn, Sendbtn } from './button';
+export { Resumebtn } from './button';
