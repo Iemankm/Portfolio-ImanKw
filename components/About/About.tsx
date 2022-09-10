@@ -7,6 +7,8 @@ import Image from "next/image";
 import { Heading2,Heading4 } from "../styleGuid/components/text";
 import {Resumebtn} from "../styleGuid/components/button"
 import { Container, Row, Col } from "react-grid-system";
+// import useDownloader from "react-use-downloader";
+
 
 export default function About({ aboutMes }) {
   console.log(aboutMes);
@@ -22,7 +24,7 @@ export default function About({ aboutMes }) {
               <Heading2 className={styles.section__title}>About Me</Heading2>
               <Heading4 className={styles.aboutdes}>{aboutMes.about}</Heading4> 
               <div className={styles.buttons}>
-               <Resumebtn className={styles.resumebtn}>Download Resume</Resumebtn>
+               {/* <Resumebtn  onClick={() => download(fileUrl, filename)} className={styles.resumebtn}>Download Resume</Resumebtn> */}
               </div>
             </div>
           </div>

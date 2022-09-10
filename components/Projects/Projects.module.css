@@ -52,7 +52,6 @@
   }
 }
 .carditem:nth-child(1){
-  background-color: var(--clr-dell);
   padding: 10px;
   border-radius: 10px;
   border: 4px solid var(--clr-Green-Mist);
@@ -65,7 +64,6 @@
 }
 
 .carditem:nth-child(2){
-  background-color: var(--clr-dell);
   padding: 10px;
   border-radius: 10px;
   border: 4px solid var(--clr-Green-Mist);
@@ -75,7 +73,6 @@
 
 }
 .carditem:nth-child(3){
-  background-color: var(--clr-dell);
   padding: 10px;
   border-radius: 10px;
   border: 4px solid var(--clr-Green-Mist);
@@ -124,45 +121,6 @@
   width: 292vw;
 } */
 
-
-
-.carditem:nth-child(1){
-  background-color: var(--clr-dell);
-  padding: 10px;
-  border-radius: 10px;
-  border: 4px solid var(--clr-Green-Mist);
-  
-}
-
-.carditem:nth-child(1):hover{
-  border: 4px solid var(--clr-Dell);
-
-}
-
-.carditem:nth-child(2){
-  background-color: var(--clr-dell);
-  padding: 10px;
-  border-radius: 10px;
-  border: 4px solid var(--clr-Green-Mist);
-  
-}
-.carditem:nth-child(2):hover{
-  border: 4px solid var(--clr-Dell);
-
-}
-.carditem:nth-child(3){
-  background-color: var(--clr-dell);
-  padding: 10px;
-  border-radius: 10px;
-  border: 4px solid var(--clr-Green-Mist);
-
-}
-
-
-.carditem:nth-child(3):hover{
-  border: 4px solid var(--clr-Dell);
-
-}
 
 
 .projectcard__title{

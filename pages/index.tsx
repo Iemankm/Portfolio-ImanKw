@@ -17,6 +17,7 @@ export default function Home({ aboutMes, hero, projects, contact }) {
       <Head>
         <title>Iman Al Wahaibi</title>
         <meta property="og:title" content="Iman Al Wahaibi" key="title" />
+        
       </Head>
       <Hero hero={hero} />
       <About aboutMes={aboutMes} />
@@ -72,3 +73,4 @@ export async function getStaticProps() {
     },
   };
 }
+
