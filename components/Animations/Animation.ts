@@ -1,9 +1,14 @@
 export const heroAnimation={
-    hidden:{x:-400,opacity:0},
-    show:{x:0,opacity:1},
+    hidden:{z:-400,opacity:0},
+    show:{z:0,opacity:1},
 };
 
 export const heroInfoAnimation={
-    hidden:{x:100,opacity:0},
-    show:{x:0,opacity:1},
-}
+    hidden:{z:100,opacity:0},
+    show:{z:0,opacity:1},
+};
+
+export const aboutAnimation = {
+    hidden: { scale: 0, opacity: 0 },
+    show: { scale: 1, opacity: 1 },
+  };
