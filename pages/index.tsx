@@ -2,6 +2,7 @@ import React from "react";
 import { gql } from "@apollo/client";
 import client from "../apolloClient";
 import About from "../components/About/About";
+import Footer from "../components/Footer/Footer";
 import Projects from "../components/Projects/Projects"
 import Head from 'next/head'
 import Hero from "../components/Hero/Hero";
@@ -21,7 +22,8 @@ export default function Home({ aboutMes, hero, projects, contact }) {
       <About aboutMes={aboutMes} />
       <Projects projects={projects} />
       <Contact contact={contact} />
-    
+      {/* 
+      <Footer /> */}
     </motion.div>
   );
 }
@@ -36,7 +38,13 @@ export async function getStaticProps() {
           }
           slug
         }
-       
+        awards {
+          rank
+          title
+          place
+          year
+          slug
+        }
         projects {
           projpic {
             url
@@ -44,6 +52,11 @@ export async function getStaticProps() {
           title
           date
           description
+          slug
+        }
+        achievements {
+          title
+          year
           slug
         }
       }
