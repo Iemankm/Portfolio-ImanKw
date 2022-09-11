@@ -4,7 +4,6 @@ import client from "../../apolloClient";
 import { m, motion } from "framer-motion";
 import styles from "./Contact.module.css";
 import { Resumebtn } from "../styleGuid/components/button";
-import { Textarea } from '@nextui-org/react';
 import { Heading3, Heading4 } from "../styleGuid/components/text";
 import emailjs, { send, sendForm } from 'emailjs-com';
 
@@ -17,12 +16,13 @@ const spring = {
 };
 
 export default function Contact({ contact }) {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_3wsimu8', 'template_de6yq3w', form.current, 'HoOl6mtyrKMVDpjyG')
+    emailjs.sendForm('service_3wsimu8', 'template_de6yq3w', e.target, 'HoOl6mtyrKMVDpjyG')
       .then((result) => {
           console.log(result.text);
           alert("Email was sent!!");

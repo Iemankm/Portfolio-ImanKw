@@ -13,7 +13,7 @@ import {motion} from "framer-motion"
 export default function Home({ aboutMes, hero, projects, contact }) {
   console.log(projects);
   return (
-    <motion.div initial="hidden" amimate="show">
+    <motion.div initial="hidden" animate="show">
       <Head>
         <title>Iman Al Wahaibi</title>
         <meta property="og:title" content="Iman Al Wahaibi" key="title" />

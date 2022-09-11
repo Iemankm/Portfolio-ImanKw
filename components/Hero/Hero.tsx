@@ -5,6 +5,8 @@ import { faLinkedinIn, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { Heading1,Heading3,Heading2 } from "../styleGuid/components/text";
 import styles from "./Hero.module.css";
 import Image from 'next/image'
+import { motion } from "framer-motion";
+import {heroAnimation,heroInfoAnimation} from "../Animations/Animation"
 // assets
 import ImanK from '../../images/imank.svg';
  
@@ -35,7 +37,7 @@ export default function Hero ({ hero }) {
       <Image src={ImanK} alt="logo" className={styles.logo} layout='responsive' width={114} height={68.12}/>
         </div>
   
-          <div className={styles.container2} >
+          <motion.div className={styles.container2} variants={heroInfoAnimation} transition={{delay:0.3,duration:0.6,type:"tween"}} >
           
               {" "}   
               <div >
@@ -45,7 +47,7 @@ export default function Hero ({ hero }) {
             </span>
             </div>
             <Heading2 className={styles.frontend}>Front-End Developer</Heading2>
-            </div>
+            </motion.div>
     </section>
   );
   };

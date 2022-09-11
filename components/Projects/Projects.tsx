@@ -12,7 +12,7 @@ import { iterateObserversSafely } from "@apollo/client/utilities";
 export default function Projects({ projects }) {
 
   return (
-    <section  strength={600} className={styles.section3} id="proj">
+    <section className={styles.section3} id="proj">
        <div className={styles.row}>
         <div>
           <Heading2 className={styles.title}>
