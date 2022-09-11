@@ -6,14 +6,13 @@ import { motion, Variants } from "framer-motion";
 import { Heading2, Heading3, Heading4 } from "../styleGuid/components/text";
 import Image from 'next/image';
 import { iterateObserversSafely } from "@apollo/client/utilities";
-import { Parallax } from "react-parallax";
 
 
 
 export default function Projects({ projects }) {
 
   return (
-    <Parallax  strength={600} className={styles.section3} id="proj">
+    <section  strength={600} className={styles.section3} id="proj">
        <div className={styles.row}>
         <div>
           <Heading2 className={styles.title}>
@@ -49,7 +48,7 @@ export default function Projects({ projects }) {
         )}
     )}
     </div>
-    </Parallax>
+    </section>
   );
 }
 
