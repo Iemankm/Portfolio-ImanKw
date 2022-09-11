@@ -1,14 +1,12 @@
-import React,{useState,useEffect} from "react";
-import { gql } from "@apollo/client";
+import React,{useRef} from "react";
+import { from, gql } from "@apollo/client";
 import client from "../../apolloClient";
 import { m, motion } from "framer-motion";
 import styles from "./Contact.module.css";
-import { Resumebtn, Sendbtn } from "../styleGuid/components/button";
+import { Resumebtn } from "../styleGuid/components/button";
 import { Textarea } from '@nextui-org/react';
 import { Heading3, Heading4 } from "../styleGuid/components/text";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
-
-
+import emailjs, { send, sendForm } from 'emailjs-com';
 
 
 const spring = {
@@ -18,83 +16,48 @@ const spring = {
   when: "afterChildren",
 };
 
-export default function Contact({ status,message, onValidated }) {
+export default function Contact({ contact }) {
+  const form = useRef();
 
-  const [firstName, setFirstName] = useState('');
-  const [email, setEmail] = useState('');
-  const [msg, setMsg] = useState('');
-
-
-  useEffect(() => {
-    if(status === "success") clearFields();
-  }, [status])
-
-  const clearFields = () => {
-    setFirstName('');
-    setEmail('');
-    setMsg('');
-  }
-
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    email &&
-    firstName &&
-    msg &&
-    email.indexOf("@") > -1 &&
-    onValidated({
-        MERGE0: email,
-        MERGE1: firstName,
-        MERGE2: msg,
-    });
-}
+
+    emailjs.sendForm('service_3wsimu8', 'template_de6yq3w', form.current, 'HoOl6mtyrKMVDpjyG')
+      .then((result) => {
+          console.log(result.text);
+          alert("Email was sent!!");
+      }, (error) => {
+          console.log(error.text);
+          alert("Email was not sent!!");
+      });
+  };
 
   return (
     <section className={styles.section4} id="contact">
 <div className={styles.envelope} title=""> 
   <div className={styles.back}></div>
-  <form className={styles.letter} onSubmit={(e) => handleSubmit(e)}><Heading3 className={styles.title}>Get in Touch</Heading3>
-  <h3 className="mc__title">
-          {status === "success" 
-            ? "Success!" 
-            : "Email was sent successfully!"
-          }
-        </h3>
-        {status === "success" && (
-          <div
-            className="mc__alert mc__alert--success"
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-
-{status !== "success" ? (
-          <div className="mc__field-container">
+  <form className={styles.letter} ref={form} onSubmit={sendEmail}>
+    <Heading3 className={styles.title}>Get in Touch</Heading3>
                <div>
       <Heading4 className={styles.uname}>Name:</Heading4>
-      <input className={styles.input_name} type="text" name="name"  onChangeHandler={setFirstName} defaultValue={firstName}/>
+      <input className={styles.input_name} type="text" name="from_name"  />
     </div>
    <div>
       <Heading4 className={styles.uemail}>Email:</Heading4>
-      <input className={styles.input_email} type="email" name="email" onChangeHandler={setEmail} defaultValue={email} />
+      <input className={styles.input_email} type="email" name="email" />
    </div>
    <div>
       <Heading4 className={styles.umsg}>Message:</Heading4>
-      <textarea className={styles.txtarea} onChangeHandler={setMsg} defaultValue={message} ></textarea>
+      <textarea className={styles.txtarea} name="message"  ></textarea>
    </div>
-  
-          </div>
-        ) : null}
+    <Resumebtn className={styles.sendbtn}  type="submit">Send</Resumebtn>
 
-{
-          status === 'success' ? <button
-            onClick={() => setModalOpen(false)}
-            className="g__justify-self-center">Close</button> : 
-            <Resumebtn className={styles.sendbtn} formValues={[firstName, email, message]}>Send</Resumebtn>
 
-        }
 
 </form>
 </div> 
     </section>
   );
 }
+
+

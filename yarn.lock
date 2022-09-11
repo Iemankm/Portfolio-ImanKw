@@ -1957,10 +1957,20 @@
     "domelementtype" "^2.2.0"
     "domhandler" "^4.2.0"
 
+"dotenv@^16.0.2":
+  "integrity" "sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA=="
+  "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-16.0.2.tgz"
+  "version" "16.0.2"
+
 "electron-to-chromium@^1.4.202":
   "integrity" "sha512-kUN8QXmqHAN8phxjF3QpHeX7CbXGXadSngx9r1O/S9jt+uC0O/vjPi/9+8/Mk3sKewLLMrjpBJZMfVpPCdkG3g=="
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.245.tgz"
   "version" "1.4.245"
+
+"emailjs-com@^3.2.0":
+  "integrity" "sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA=="
+  "resolved" "https://registry.npmjs.org/emailjs-com/-/emailjs-com-3.2.0.tgz"
+  "version" "3.2.0"
 
 "emoji-regex@^9.2.2":
   "integrity" "sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg=="
@@ -3229,7 +3239,7 @@
     "minimist" "^1.2.0"
     "strip-json-comments" "~2.0.1"
 
-"react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>= 16.8.0", "react-dom@>=16.8 || ^17.0.0 || ^18.0.0", "react-dom@18.1.0":
+"react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>= 16.8.0", "react-dom@>=16.8 || ^17.0.0 || ^18.0.0", "react-dom@16.x.x || 17.x.x || 18.x.x", "react-dom@18.1.0":
   "integrity" "sha512-fU1Txz7Budmvamp7bshe4Zi32d0ll7ect+ccxNu9FlObT605GOEB8BfO4tmRJ39R5Zj831VCpvQ05QPBW5yb+w=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.1.0.tgz"
   "version" "18.1.0"
@@ -3268,27 +3278,17 @@
     "prop-types" "^15.5.10"
     "to-querystring" "^1.0.4"
 
-"react-use-downloader@^1.1.7":
-  "integrity" "sha512-DfQWHf/f7B4MSmPsE2syNnaRSuit72ApvJAMdMi1midubPLNI5z8EBG3zI0CqTiEPrhALQCftHOGzQDe1tkQ4A=="
-  "resolved" "https://registry.npmjs.org/react-use-downloader/-/react-use-downloader-1.1.7.tgz"
-  "version" "1.1.7"
-  dependencies:
-    "react" "^17.0.2"
+"react-parallax@^3.5.1":
+  "integrity" "sha512-p5zPsPsqELlIOGaPS01O0IRx8R2bxcBAtrdF/RHf9nIxxk5hijbM2y89tk4rJQBcNH6ESSLe7J2NV4/ms7FLFw=="
+  "resolved" "https://registry.npmjs.org/react-parallax/-/react-parallax-3.5.1.tgz"
+  "version" "3.5.1"
 
-"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.x || ^18.x", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=15", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.x", "react@>=17.0.0", "react@18.1.0":
+"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.x || ^18.x", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=15", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.x", "react@>=17.0.0", "react@16.x.x || 17.x.x || 18.x.x", "react@18.1.0":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"
   dependencies:
     "loose-envify" "^1.1.0"
-
-"react@^17.0.2":
-  "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
-  "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
-  "version" "17.0.2"
-  dependencies:
-    "loose-envify" "^1.1.0"
-    "object-assign" "^4.1.1"
 
 "readable-stream@^3.1.1", "readable-stream@^3.4.0":
   "integrity" "sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA=="

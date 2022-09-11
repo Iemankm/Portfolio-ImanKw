@@ -7,13 +7,12 @@ import Image from "next/image";
 import { Heading2,Heading4 } from "../styleGuid/components/text";
 import {Resumebtn} from "../styleGuid/components/button"
 import { Container, Row, Col } from "react-grid-system";
-// import useDownloader from "react-use-downloader";
-
+import { Parallax } from "react-parallax";
 
 export default function About({ aboutMes }) {
   console.log(aboutMes);
   return (
-    <section className={styles.section2} id="about">
+    <Parallax  strength={600} className={styles.section2} id="about">
         {aboutMes?.map((aboutMes, i) => (
           <div className={styles.lii} key={i}>
             <div className={styles.left} >
@@ -29,6 +28,6 @@ export default function About({ aboutMes }) {
             </div>
           </div>
           ))}
-    </section>
+    </Parallax>
   );
 }

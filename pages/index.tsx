@@ -7,17 +7,16 @@ import Projects from "../components/Projects/Projects"
 import Head from 'next/head'
 import Hero from "../components/Hero/Hero";
 import Contact from "../components/Contact/Contact";
-
+import {motion} from "framer-motion"
 
        
 export default function Home({ aboutMes, hero, projects, contact }) {
   console.log(projects);
   return (
-    <div>
+    <motion.div initial="hidden" amimate="show">
       <Head>
         <title>Iman Al Wahaibi</title>
         <meta property="og:title" content="Iman Al Wahaibi" key="title" />
-        
       </Head>
       <Hero hero={hero} />
       <About aboutMes={aboutMes} />
@@ -25,7 +24,7 @@ export default function Home({ aboutMes, hero, projects, contact }) {
       <Contact contact={contact} />
       {/* 
       <Footer /> */}
-    </div>
+    </motion.div>
   );
 }
 export async function getStaticProps() {
