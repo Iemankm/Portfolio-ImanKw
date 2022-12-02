@@ -25,7 +25,7 @@ export default function Project1({ project1}) {
       </div>
 
 <motion.div     whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.9 }} className={styles.carditems}><a href="/caseStudy">
+    whileTap={{ scale: 0.9 }} className={styles.carditems}><Link to="/caseStudy">
         <div   className={styles.carditem}>
           <div className={styles.pic}> 
            <Image
@@ -43,7 +43,7 @@ export default function Project1({ project1}) {
               </Heading3>
           </div>
     </div>
-    </a>
+    </Link>
     </motion.div>
     </section>
   );
