@@ -15,7 +15,7 @@ import ddd from '../images/IMG_9797.jpg';
 import dddd from '../images/IMG_9840.jpg';
 import intr from '../images/r.jpg';
 import s from '../images/s.jpeg'
-import pres from '../images/pres.JPG'
+import pres from '../images/pres.jpg'
 
 
 
