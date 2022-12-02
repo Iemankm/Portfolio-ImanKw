@@ -36,7 +36,7 @@ export default function Hero ({ hero }) {
     <div className={styles.menu__logo}>
       <Image src={ImanK} alt="logo" className={styles.logo} layout='responsive' width={114} height={68.12}/>
         </div>
-  
+      
           <motion.div className={styles.container2} variants={heroInfoAnimation} transition={{delay:0.3,duration:1,type:"tween"}} >
           
               {" "}   
@@ -51,4 +51,4 @@ export default function Hero ({ hero }) {
     </section>
   );
   };
-        
+  

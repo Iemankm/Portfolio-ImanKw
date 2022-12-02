@@ -25,6 +25,7 @@
 .carditems{
   display: grid;
   gap: 3vh;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

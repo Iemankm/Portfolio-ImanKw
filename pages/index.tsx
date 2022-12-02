@@ -8,11 +8,12 @@ import Head from 'next/head'
 import Hero from "../components/Hero/Hero";
 import Contact from "../components/Contact/Contact";
 import {motion} from "framer-motion"
+import Project1 from "../components/Project1/Project1"
 
-       
-export default function Home({ aboutMes, hero, projects, contact }) {
+export default function Home({ aboutMes, hero, project1, projects, contact }) {
   console.log(projects);
   return (
+    
     <motion.div initial="hidden" animate="show">
       <Head>
         <title>Iman Al Wahaibi</title>
@@ -20,11 +21,12 @@ export default function Home({ aboutMes, hero, projects, contact }) {
       </Head>
       <Hero hero={hero} />
       <About aboutMes={aboutMes} />
+      <Project1 project1={project1}/>
       <Projects projects={projects} />
       <Contact contact={contact} />
-      {/* 
-      <Footer /> */}
     </motion.div>
+
+    
   );
 }
 export async function getStaticProps() {
@@ -36,24 +38,23 @@ export async function getStaticProps() {
           profilepic {
             url
           }
+          location
+          mobile
+          email
           slug
         }
-        awards {
-          rank
-          title
-          place
-          year
-          slug
-        }
-        projects {
+
+        projects{
           projpic {
             url
           }
           title
           date
           description
-          slug
+          slug 
         }
+
+
         achievements {
           title
           year

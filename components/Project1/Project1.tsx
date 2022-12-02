@@ -1,52 +1,50 @@
 import React from "react";
 import { gql } from "@apollo/client";
 import client from "../../apolloClient";
-import styles from "./Projects.module.css";
+import styles from "./Project1.module.css";
 import { motion, Variants } from "framer-motion";
 import { Heading2, Heading3, Heading4 } from "../styleGuid/components/text";
 import Image from 'next/image';
 import { iterateObserversSafely } from "@apollo/client/utilities";
-import {  Resumebtn} from "../styleGuid/components/button/button" 
+import Heli from '../../images/heli.png';
+import {useNavigate} from 'react-router-dom';
+import CaseStudy from "../../pages/caseStudy";
+import {Link} from 'react-router-dom';
 
 
-export default function Projects({ projects }) {
+export default function Project1({ project1 ,test}) {
 
   return (
-    <section
-     className={styles.section3} id="proj" >
+    <section className={styles.section3} id="proj" >
        <div className={styles.row}>
         <div>
           <Heading2 className={styles.title}>
-            Projects
+            Latest Projects
           </Heading2>
         </div>
       </div>
 
-<div className={styles.carditems}>
-      {projects?.map((project, i) => { 
-        return(
-        <div  key={i} className={styles.carditem}>
+<motion.div     whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }} className={styles.carditems}><a href="/caseStudy">
+        <div   className={styles.carditem}>
           <div className={styles.pic}> 
            <Image
-            src={project.projpic.url}
+            src={Heli}
             layout="responsive"
-            width={725}
-            height={425}
+            height={40}
+            width={50}
             alt="project Picture"
-          /></div>  
+          />
+          </div>  
 
           <div className={styles.infos}>
               <Heading3 className={styles.projectcard__title}>
-                {project.title}
+                UX Related Project
               </Heading3>
-              <Heading4 as="p" className={styles.projectcard__description}>
-                {project.description}
-              </Heading4>
           </div>
-          </div>
-        )}
-    )}
     </div>
+    </a>
+    </motion.div>
     </section>
   );
 }

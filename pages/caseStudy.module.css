@@ -1,0 +1,185 @@
+
+  .casestudy{
+    height: 100%;
+  }
+  .gutters {
+    padding: 10px;
+    border: 20px;
+    border-top: 20px;
+  }
+  
+.section2{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section2{
+    min-height: 100vh;
+  }
+}
+
+
+
+.resumebtn{
+cursor: pointer; 
+margin-left: 13vh;
+}
+
+.resumebtn:hover{
+  border: 2px solid var(--clr-Dell);
+  color: var(--clr-Dell);
+}
+  
+@media (min-width: 768px) {
+  .section__title{
+    opacity: 1;
+    margin-top: 7vh;
+  }
+
+  .resumebtn{
+    margin-left: 0;
+    }
+}  
+  .lii{
+    display: grid;
+  }
+  .lii2{
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    display: grid;
+  }
+
+  .lii3{
+    padding-top: 20vh;
+    padding-bottom: 12vh;
+    display: grid;
+  }
+
+  .lii4{
+    padding-bottom: 12vh;
+    display: grid;
+  }
+
+  .lii5{
+    padding-top: 20vh;
+    padding-bottom: 12vh;
+    display: grid;
+  }
+.designs{
+  padding-top: 10vh;
+}
+ .projpic{
+  border-radius: 10px;
+ }
+
+ .infos{
+  display: grid;
+  /* color: var(--clr-Green-Mist); */
+  color: rgba(214,214,177, 0.7);
+  font-family: Raleway;
+  font-size: 0.9rem;
+
+ }
+
+ .location{
+  opacity: 0px;
+ }
+@media (min-width: 768px) {
+  .lii{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lii2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lii3{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lii4{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lii5{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left{
+    width: 50vh;
+  }
+  .right{
+    text-align: left;
+    padding-left: 0vh;
+    padding-top: 6vh;
+    width: 90vh;
+  }
+  .left2{
+  width: 70vh;
+  margin-left: 2vh;
+margin-top: 3vh;
+}
+
+.pointes{
+  font-size: 1rem;
+  text-align: left;
+}
+.lii2 .casedes{
+text-align: left;
+}
+   .right2{
+    width: 45vh;
+    margin-left: 15vh;
+  }
+
+  .lii3 .casedes{
+    text-align: left;
+    }
+    .left3{
+    width: 45vh;
+    margin-left: 5vh;
+  }
+     .right3{
+        width: 75vh;
+        margin-right: 12vh;
+        margin-top: 10vh;
+
+    }
+
+    .left5{
+      width: 60vh;
+      margin-left: 6vh;
+    }
+       .right5{
+          width: 75vh;
+          margin-left: 5vh;
+          margin-top: 25vh;
+          text-align: left;
+      }
+    .designs .casedes{
+      padding-left: 2vh;
+      }
+    .left4{
+      margin-left: 2vh;
+    }
+       .right4{
+        margin-left: 2vh;
+      }
+      .mid{
+        margin-left: 2vh;
+      }
+ .resumebtn{
+  margin-top: 5vh;
+ }
+
+ .infos{
+  margin-top: 5vh;
+  grid-template-columns: repeat(3,0.4fr);
+  /* grid-template-rows: 80px auto 80px;  */
+}
+}

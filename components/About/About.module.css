@@ -48,7 +48,19 @@ margin-left: 13vh;
 
  .profilepic{
   border-radius: 10px;
+ }
 
+ .infos{
+  display: grid;
+  /* color: var(--clr-Green-Mist); */
+  color: rgba(214,214,177, 0.7);
+  font-family: Raleway;
+  font-size: 0.9rem;
+
+ }
+
+ .location{
+  opacity: 0px;
  }
 @media (min-width: 768px) {
   .lii{
@@ -59,29 +71,16 @@ margin-left: 13vh;
   }
   .right{
     text-align: left;
-    padding-left: 1vh;
+    padding-left: 3vh;
     width: 85vh;
   }
  .resumebtn{
-  margin-top: 8vh;
+  margin-top: 5vh;
  }
-  
+
+ .infos{
+  margin-top: 5vh;
+  grid-template-columns: repeat(3,0.4fr);
+  /* grid-template-rows: 80px auto 80px;  */
 }
-
-/* 
-.left{
-  object-fit: cover;
-  width: 30vh;
-  height: 27.3vh;
-  justify-items: center;
-  margin: auto;
 }
-
-.aboutdes{
-  font-size: 0.9rem !important;
-  color: var(--clr-Green-Mist);
-}
-
- */
-
-/*---- Desktop -----*/

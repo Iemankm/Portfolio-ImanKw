@@ -13,8 +13,6 @@
     color:var(--clr-Dell) !important;
   }
 
-
-
 .iam{
   font-size: 1.5rem;
   padding-bottom: -2vw;
@@ -29,6 +27,16 @@
 .name{
   font-size: 3rem;
   margin:0;
+}
+
+.starsvg {
+	width: 200px; height: 200px;
+	position: fixed;
+	left: 50%; top: 50%;
+	transform: translate(-50%, -50%);
+}
+.starpath {
+	stroke: #fff;
 }
 
 @media (min-width: 768px) {
