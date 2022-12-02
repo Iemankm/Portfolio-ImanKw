@@ -12,7 +12,7 @@ import CaseStudy from "../../pages/caseStudy";
 import {Link} from 'react-router-dom';
 
 
-export default function Project1({ project1 ,test}) {
+export default function Project1({ project1}) {
 
   return (
     <section className={styles.section3} id="proj" >
